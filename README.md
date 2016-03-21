@@ -34,7 +34,3 @@ Versions
 ---------------
 Rust versions currently supported:
 * 1.7
-
-License
----------------
-MIT
