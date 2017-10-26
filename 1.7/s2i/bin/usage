@@ -5,8 +5,8 @@ This is a S2I Rust 1.7 CentOS base image. To use it, install S2I: https://github
 
 Sample invocation:
 
-$ s2i build https://github.com/kargakis/sti-rust.git \\
-    --context-dir=/1.7/test/test-app/ openshift/rust-17-centos7 rust-test-app
+$ s2i build https://github.com/openshift-s2i/sti-rust.git \\
+    --context-dir=examples/test-app/ openshift/rust-17-centos7 rust-test-app
 
 You can then run the resulting image via:
 $ docker run rust-test-app
