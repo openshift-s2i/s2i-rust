@@ -7,6 +7,9 @@ echo "---> Build started at $(date)"
 echo "---> Preparing source..."
 cp -Rf /tmp/src/. ./
 
+echo "---> Enabling rust-toolset-7..."
+source scl_source enable rust-toolset-7 || true
+
 echo "---> Installing application source..."
 cargo build
 
