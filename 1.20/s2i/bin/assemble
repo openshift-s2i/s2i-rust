@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -e
+
+echo "---> Build started at $(date)"
+
+echo "---> Preparing source..."
+cp -Rf /tmp/src/. ./
+
+echo "---> Installing application source..."
+cargo build
+
+echo "---> Build completed at $(date)"
+
+# Fix source directory permissions
+fix-permissions ./
