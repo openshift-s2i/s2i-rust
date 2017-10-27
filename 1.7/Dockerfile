@@ -12,9 +12,7 @@ ENV RUST_VERSION 1.7
 LABEL io.k8s.description="Platform for building and running Rust 1.7 applications" \
       io.k8s.display-name="Rust 1.7" \
       io.openshift.expose-services="8080:http" \
-      io.openshift.tags="builder,rust,rust17" \
-      name="openshift/rust-17-centos7" \
-      version="1"
+      io.openshift.tags="builder,rust,rust17"
 
 RUN (curl https://static.rust-lang.org/dist/rust-1.7.0-x86_64-unknown-linux-gnu.tar.gz | \
     tar -zxf -) && \

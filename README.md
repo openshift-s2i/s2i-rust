@@ -13,7 +13,6 @@ To prepare the builder image:
 $ git clone https://github.com/openshift-s2i/s2i-rust.git
 $ cd sti-rust
 $ make build
-$ make tag
 ```
 
 Use
