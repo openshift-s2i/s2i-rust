@@ -10,6 +10,13 @@ cp -Rf /tmp/src/. ./
 echo "---> Enabling rust-toolset-7..."
 source scl_source enable rust-toolset-7 || true
 
+if [ ! -z $PROXY ]; then
+  echo "---> Setting cargo http proxy to $PROXY"
+  mkdir -p $HOME/.cargo || true
+  echo "[http]"             >> $HOME/.cargo/config
+  echo "proxy = \"$PROXY\"" >> $HOME/.cargo/config
+fi
+
 echo "---> Installing application source..."
 cargo build
 

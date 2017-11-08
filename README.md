@@ -30,6 +30,15 @@ Finally, run the image:
 $ docker run rust-test-app
 ```
 
+Environment variables
+---------------------
+
+Application developers can use the following environment variables to configure the runtime behavior of this image:
+
+NAME        | Description
+------------|-------------
+PROXY       | Use a cargo proxy during assembly
+
 Versions
 ---------------
 Rust versions currently supported:
