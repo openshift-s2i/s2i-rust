@@ -18,7 +18,7 @@ if [ ! -z $PROXY ]; then
 fi
 
 echo "---> Installing application source..."
-cargo build
+cargo build --release
 
 echo "---> Build completed at $(date)"
 
