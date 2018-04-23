@@ -8,6 +8,9 @@ official [OpenShift Documentation](https://docs.openshift.org/latest/architectur
 
 Installation
 ---------------
+You will either need to pre-install [docker-squash](https://github.com/goldmann/docker-squash) that is used for squashing docker layers
+or you can skip squashing with `export SKIP_SQUASH=1`.
+
 To prepare the builder image:
 ```shell
 $ git clone https://github.com/openshift-s2i/s2i-rust.git
