@@ -11,7 +11,7 @@ Installation
 To prepare the builder image:
 ```shell
 $ git clone https://github.com/openshift-s2i/s2i-rust.git
-$ cd sti-rust
+$ cd s2i-rust
 $ make build
 ```
 
