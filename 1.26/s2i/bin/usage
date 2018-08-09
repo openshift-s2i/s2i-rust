@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cat <<EOF
+This is a S2I Rust 1.26 base image. To use it, install S2I: https://github.com/openshift/source-to-image
+
+Sample invocation:
+
+$ s2i build https://github.com/openshift-s2i/s2i-rust.git -r rust-1.26  \\
+    --context-dir=examples/test-app/ openshift/rust-126-centos7 rust-test-app
+
+You can then run the resulting image via:
+$ docker run rust-test-app
+EOF
